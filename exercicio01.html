@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 JS</title>
+</head>
+<body>
+    <script>
+
+        const paises = ['Albânia','Bolívia','Canadá','Dinamarca','Etiópia','Finlândia','Alemanha','Hungria','Irlanda','Japão','Quênia'];
+
+        for (let a = 0; a < 11; a++) {
+            console.log(paises[a]);
+        };
+
+        console.log(paises.length);
+        
+        paises.unshift("Portugal");
+
+        paises.push("Espanha");
+
+        console.log(paises.splice(10,13));
+
+        console.log(paises.join("-"));
+
+    </script>
+</body>
+</html>
