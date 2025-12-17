@@ -9,11 +9,11 @@
     <script>
 
         function total(preco, desconto) {
-            if(desconto === 0){
+            if (desconto === 0) {
                 return preco * 2;
-            } else if(desconto < 10){
+            } else if (desconto < 10) {
                 return preco + desconto;
-            } else if(desconto > 10 && desconto < 30){
+            } else if (desconto > 10 && desconto < 30) {
                 return preco - desconto;
             }
         };

@@ -13,16 +13,30 @@
         for (let a = 0; a < 11; a++) {
             console.log(paises[a]);
         };
+        //ou
+        for (let b = 0; b < paises.length; b++) {
+            console.log(paises[b]);
+        };
 
         console.log(paises.length);
+        //ou
+        function getPaisesLength(){
+            return paises.length;
+        };
         
         paises.unshift("Portugal");
 
         paises.push("Espanha");
 
-        console.log(paises.splice(10,13));
+        console.log(paises.splice(10,13)); //--> altera o array por isso não é tão adequado
+        //ou
+        console.log(paises.slice(-3));
+        //ou
+        console.log(paises.length - 3, paises.length);
+        //ou
+        console.log(paises.slice(getPaisesLength() - 3, getPaisesLength()));
 
-        console.log(paises.join("-"));
+        console.log(paises.join(" - "));
 
     </script>
 </body>
